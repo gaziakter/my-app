@@ -6,6 +6,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dhaka', function () {
+Route::post('/dhaka', function () {
     return 'Hello Dhaka..!';
 });
