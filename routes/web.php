@@ -11,4 +11,4 @@ Route::post('/dhaka', function () {
     return 'Hello Dhaka..!';
 });
 
-Route::get('/hello', [DemoController::class, 'DemoFunction']);
+Route::get('/hello/{name}', [DemoController::class, 'DemoFunction']);
