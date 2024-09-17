@@ -11,7 +11,8 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        //
+        
+        // csrf token disable
         $middleware->validateCsrfTokens(except: [
             'http://127.0.0.1:8000/dhaka' // <-- exclude this route
         ]);
